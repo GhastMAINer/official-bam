@@ -134,51 +134,6 @@ window.$S={};$S.app_instances=[];$S.nav=[{"name":"\/0","uid":"85b8a515-65ae-1fbc
     return ''
   }
 </script>
-<script>
-var _strk = _strk || []
-_strk.push = function(arg1, arg2){
-  var _arrayPush = Array.prototype.push.bind(this)
-  if (typeof arg1 === 'string' && typeof arg2 === 'function') {
-    // Support _strk.push(event, fn) for better UX
-    _arrayPush([arg1, arg2])
-  } else {
-    _arrayPush.apply(this, arguments)
-  }
-}
-window.runAfterDomBinding = {
-  add: function(name, fn) {
-    _strk.push(['Page.didMount', fn])
-  }
-}
-</script>
-
-
-<!-- CUSTOM_CODE_START -->
-<!-- CUSTOM_CODE_END -->
-
-<meta name="asset-url" content="https://static-assets.strikinglycdn.com" />
-<script>
-  (function() {
-    window.$B || (window.$B = {});
-  
-    window.utils || (window.utils = {});
-  
-    window.utils.getCookieValue = function(name) {
-      var cookie, cookies, key, value, _i, _len, _ref;
-      cookies = document.cookie.split(';');
-      for (_i = 0, _len = cookies.length; _i < _len; _i++) {
-        cookie = cookies[_i];
-        _ref = cookie.trim().split('='), key = _ref[0], value = _ref[1];
-        if (key === name) {
-          return decodeURIComponent(value);
-        }
-      }
-      return '';
-    };
-  
-  }).call(this);
-</script>
-<script src="https://static-assets.strikinglycdn.com/detectIE-c385c24313ef0e9e4e7a1e131bf5e59f0fbd468f9f9ef44fd6739ae84ef0c0a4.js" async="async"></script>
 
 </head>
 <body class='show  locale-en' id='user_sites' theme_name='s5-theme'>
